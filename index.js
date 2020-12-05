@@ -1,7 +1,7 @@
-const render = require("./htmlRenderer");
-const Manager = require("./Manager");
-const Engineer = require("./Engineer");
-const Intern = require("./Intern");
+const render = require("./lib/htmlRenderer");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
@@ -9,23 +9,7 @@ let employee;
 let employeeArray = [];
 
 // array of questions for user
-const standardQuestions = [
-  {
-    type: "input",
-    name: "name",
-    message: "What is the employee's name?",
-  },
-  {
-    type: "input",
-    name: "id",
-    message: "What is the employee's id?",
-  },
-  {
-    type: "input",
-    name: "email",
-    message: "What is the employee's email?",
-  },
-];
+
 
 const employeeQuestion = [
   {
@@ -36,37 +20,57 @@ const employeeQuestion = [
   },
 ];
 
-const managerQuestions = [
-  ...standardQuestions,
-  {
-    type: "input",
-    name: "officeNumber",
-    message: "What is the employee's office number?",
-  },
-];
 
-const internQuestions = [
-  ...standardQuestions,
-  {
-    type: "input",
-    name: "school",
-    message: "What is the employee's school?",
-  },
-];
-
-const engineerQuestions = [
-  ...standardQuestions,
-  {
-    type: "input",
-    name: "gitHub",
-    message: "What is the employee's GitHub username?",
-  },
-];
 
 function askQuestions() {
   inquirer.prompt(employeeQuestion).then((response) => {
     // console.log(response.employeeType);
     employee = response.employeeType;
+
+    const standardQuestions = [
+        {
+          type: "input",
+          name: "name",
+          message: "What is the "+employee+"'s name?",
+        },
+        {
+          type: "input",
+          name: "id",
+          message: "What is the "+employee+"'s id?",
+        },
+        {
+          type: "input",
+          name: "email",
+          message: "What is the "+employee+"'s email?",
+        },
+      ];
+
+    const managerQuestions = [
+        ...standardQuestions,
+        {
+          type: "input",
+          name: "officeNumber",
+          message: "What is the "+employee+"'s office number?",
+        },
+      ];
+      
+      const internQuestions = [
+        ...standardQuestions,
+        {
+          type: "input",
+          name: "school",
+          message: "What is the "+employee+"'s school?",
+        },
+      ];
+      
+      const engineerQuestions = [
+        ...standardQuestions,
+        {
+          type: "input",
+          name: "gitHub",
+          message: "What is the "+employee+"'s GitHub username?",
+        },
+      ];
 
     switch (employee) {
       case "Manager":
@@ -132,7 +136,7 @@ function endOfEmployees() {
       if (response.end == "Yes") {
         askQuestions();
       } else {
-        fs.writeFile("index.html", render(employeeArray), (err) =>
+        fs.writeFile("./output/index.html", render(employeeArray), (err) =>
           err ? console.error(err) : console.log("Index.html is saved")
         );
       }
