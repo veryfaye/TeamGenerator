@@ -1,0 +1,28 @@
+body {
+    background-image: url("../images/flower-background.png");
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster Two', cursive;
+}
+
+li {
+    background-color: #fafaf1;
+}
+
+.jumbotron {
+    background-color: #f7d650;
+}
+
+.card {
+    border-style: solid;
+    border-color: #4b483f;
+}
+
+.card-header {
+    background-color: #de8b63;
+}
+
+.card-body {
+    background-color: #8497bf;
+}

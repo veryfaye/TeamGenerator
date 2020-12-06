@@ -121,7 +121,7 @@ function askQuestions() {
             internResponse.name,
             internResponse.id,
             internResponse.email,
-            internResponse.officeNumber
+            internResponse.school
           );
 
           // add the intern object instance to the employee array to use later for generating the HTML file

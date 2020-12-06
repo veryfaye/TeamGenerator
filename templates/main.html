@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c502137733.js"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
-            </div>
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 jumbotron mb-3 team-heading shadow">
+          <h1 class="text-center">My Team</h1>
         </div>
+      </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
-                {{ team }}
-            </div>
+      <div class="row">
+        <div class="team-area col-12 d-flex flex-wrap justify-content-center">
+          {{ team }}
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
