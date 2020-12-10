@@ -1,8 +1,13 @@
 # Team Generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)<br/>
+![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
 
-##Table of Contents
+## Table of Contents
 * [Installation Instructions](#installation-instructions)
+* [Reference Images](#reference-images)
 * [Usage Information](#usage-information)
 * [Test Instructions](#test-instructions)
 * [Questions](#questions)
@@ -10,6 +15,10 @@
 
 
 This application is to generate a dynamic web page with the team members. The application prompts the user for types of team members to add, and asks specific questions depending on the type. After the user is done entering information on the team members then an index.html file is generated in the output file.
+
+## Reference Images
+Example generated web page:
+![Example Page](ExampleTeamPage.png)
 
 ## Installation Instructions
 After cloning this repo use the following commands to install the necessary dependencies for this application.
