@@ -6,8 +6,8 @@
 ![NodeJS](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
 
 ## Table of Contents
-* [Installation Instructions](#installation-instructions)
 * [Reference Images](#reference-images)
+* [Installation Instructions](#installation-instructions)
 * [Usage Information](#usage-information)
 * [Test Instructions](#test-instructions)
 * [Questions](#questions)
